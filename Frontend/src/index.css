@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* fonts */
+  --font-space-grotesk: "Arimo", sans-serif;
+  --font-space-secondary: "Montserrat", sans-serif;
+  --color-primary-red: #FF0019;
+   --breakpoint-custom-size: 71.0625rem;
+  --breakpoint-custom-size-two: 88.875rem;
+}
+
+@layer {
+  .custom-padding {
+    @apply px-2 md:px-9 lg:px-16 xl:px-20 2xl:px-50;
+  }
+ 
+  /* h1 {
+    @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
+  } */
+  p {
+    /* @apply md:text-lg; */
+  }
+  
+  .floating-element {
+    
+    animation: float 3s ease-in-out infinite; 
+  }
+}
+/* partner slide */
+
+
+/* partner slide */
+body {
+  overflow-x: hidden !important;
+  font-family: var(--font-space-grotesk);
+}
+/* float animations keyframes  */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
